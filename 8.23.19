@@ -1,0 +1,27 @@
+''' Ciera Williams
+SCIS 123
+Prompt: Program that creates a list with 10 random
+integers and prints 4 lines of output:
+-every element at even index
+-every even element
+-all elements in reverse order
+-only 1st and last element'''
+
+from random import random
+random.seed()
+numList = []
+for a in range(10):
+    numList.append(1,100)
+print(' The list is :',numList)
+print(' Elements at even indexed go as followed:',end = ' ')
+for b in range(10):
+    if (b%2) == 0:
+        print(numList[b], end=', ')
+print('\n The elements that are even integers are:', end=' ')
+for c in range(10):
+    if(numList[c]%2) == 0:
+      print(numList[c], end=', ')
+print('\n The list in reverse order goes as follows:', end=' ')
+for d in range(0,10,-1):
+      print(numList[d],end=',')
+print('\n The first element is :',numList[0],',and the last element is:',numList[9],'.')
